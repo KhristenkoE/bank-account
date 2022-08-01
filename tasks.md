@@ -16,4 +16,3 @@ Add filters by
 - [ ] date
 
 - [ ] Make pagination
-- [ ] 
