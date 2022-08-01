@@ -1,8 +1,19 @@
 ## To-do
 
-- [x] Make a mockup of the site in figma
-- [ ] Mark up transaction list page (superficial)
-- [ ] Mark up transaction details page (superficial)
-- [ ] Mark up card list page (superficial)
-- [ ] Mark up card details page (superficial)
-- [ ] Mark up bradcrums (superficial)
+- [x] Make a mockup of the site in figma - 20mins
+
+- [ ] Make transaction list page
+- [ ] Make transaction details page
+- [ ] Make card list page
+- [ ] Make card details page
+- [ ] Make breadcrums
+
+Add filters by
+- [ ] cardID
+- [ ] cardAccount
+- [ ] amount
+- [ ] currency
+- [ ] date
+
+- [ ] Make pagination
+- [ ] 
