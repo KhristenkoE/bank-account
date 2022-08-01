@@ -1,6 +1,8 @@
 ## To-do
 
-- [x] Make a mockup of the site in figma - 20mins
+- [x] Make a mockup of the site in figma
+
+- [ ] Think of an architecture and code structure
 
 - [ ] Make transaction list page
 - [ ] Make transaction details page
