@@ -2,9 +2,9 @@
 
 - [x] Make a mockup of the site in figma
 
-- [ ] Think of an architecture and code structure
+- [x] Think of an architecture and code structure
 
-- [ ] Make transaction list page
+- [x] Make transaction list page
 - [ ] Make transaction details page
 - [ ] Make card list page
 - [ ] Make card details page
