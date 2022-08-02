@@ -1,0 +1,28 @@
+{
+  "name": "bank-account",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:KhristenkoE/bank-account.git",
+  "author": "Eugene Khristenko <ekhristenko0@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack serve --config webpack.config.js --mode development --hot",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "babel-loader": "^8.2.3",
+    "html-webpack-plugin": "^5.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.7.4",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.3"
+  }
+}
