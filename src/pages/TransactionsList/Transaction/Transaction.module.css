@@ -1,0 +1,22 @@
+.transaction {
+	padding: 10px 30px;
+	background-color: #1c1c35;
+	border-radius: 5px;
+	transition: all 0.2s ease-in-out;
+}
+
+.transaction:hover {
+	cursor: pointer;
+	transform: scale(1.01);
+	background-color: #21213c;
+}
+
+.transactionInfoList {
+	display: grid;
+	grid-auto-flow: column;
+	column-gap: 40px;
+	list-style: none;
+	padding: 0;
+	justify-content: flex-start;
+	overflow-x: auto;
+}

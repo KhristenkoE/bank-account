@@ -1,6 +1,6 @@
 import React from 'react';
-import DataContext, { initialContext as initialDataContext } from './contexts/DataContext';
-import TransactionsList from './pages/TransactionsList/TransactionsList';
+import DataContext, { initialContext as initialDataContext } from '../../contexts/DataContext';
+import TransactionsList from '../../pages/TransactionsList/TransactionsList';
 
 const App = () => {
 

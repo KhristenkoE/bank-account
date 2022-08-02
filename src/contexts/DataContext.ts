@@ -1,16 +1,8 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { Card, Status } from '../interfaces/Card';
+import { Currency } from '../interfaces/Currency';
 
-enum Currency {
-	USD = 'USD',
-	EUR = 'EUR',
-	AZN = 'AZN',
-}
-
-enum Status {
-	ACTIVE = 'active',
-	BLOCKED = 'blocked',
-}
 
 const MAX_CARD_BALANCE = 99999999;
 const MIN_TRANSFER_AMOUNT = 1;
@@ -49,7 +41,7 @@ const getMockCardsData = () => Array.from({ length: 20 }, () => ({
 	transactions: Array.from({ length: getRandomIntInRange(10, 30) }, () => getMockTransactionsData()),
 }));
 
-export const initialContext = {
+export const initialContext: { cards: Card[] } = {
 	cards: getMockCardsData(),
 };
 
