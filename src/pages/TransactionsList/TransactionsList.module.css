@@ -1,3 +1,15 @@
 .section {
 	padding: 20px 20px;
 }
+
+.transactionLink {
+	color: inherit;
+	text-decoration: none;
+}
+
+.topMenu {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}

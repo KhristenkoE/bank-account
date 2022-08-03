@@ -2,9 +2,15 @@ import React from 'react';
 import { TransactionFullInfo } from '../../../interfaces/Transaction';
 import styles from './Transaction.module.css';
 
-type Props = TransactionFullInfo;
+type Props = {
+	transaction: TransactionFullInfo;
+};
 
-const Transaction = ({ transactionID, transactionDate, amount, currency, merchantInfo, cardAccount, cardID }: Props) => {
+const Transaction = ({
+	transaction,
+}: Props) => {
+	const { transactionID, transactionDate, amount, currency, merchantInfo, cardAccount, cardID } = transaction;
+
 	return (
 		<article className={styles.transaction} key={transactionID}>
 			<h3>ID: {transactionID}</h3>
