@@ -2,6 +2,8 @@ import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { Card, Status } from '../interfaces/Card';
 import { Currency } from '../interfaces/Currency';
+import { Filter, FilterType } from '../interfaces/Filter';
+import { TransactionFullInfo } from '../interfaces/Transaction';
 
 
 const MAX_CARD_BALANCE = 99999999;
@@ -41,8 +43,65 @@ const getMockCardsData = () => Array.from({ length: 20 }, () => ({
 	transactions: Array.from({ length: getRandomIntInRange(10, 30) }, () => getMockTransactionsData()),
 }));
 
-export const initialContext: { cards: Card[] } = {
-	cards: getMockCardsData(),
+const cards = getMockCardsData();
+
+const filters: Filter[] = [
+	{
+		label: 'cardID',
+		options: [{
+			label: 'All',
+			value: null,
+		}, ...cards.map(({ cardID }) => ({
+			label: cardID,
+			value: cardID,
+		}))],
+		type: FilterType.SELECT_ONE,
+	},
+	{
+		label: 'cardAccount',
+		options: [{
+			label: 'All',
+			value: null,
+		}, ...accounts.map((account) => ({
+			label: account,
+			value: account,
+		}))],
+		type: FilterType.SELECT_ONE,
+	},
+	{
+		label: 'amount',
+		from: 0,
+		to: MAX_CARD_BALANCE,
+		type: FilterType.RANGE,
+	},
+	{
+		label: 'currency',
+		options: [{
+			label: 'All',
+			value: null,
+		}, ...Object.values(Currency).map(currency => ({
+			label: currency,
+			value: currency,
+		}))],
+		type: FilterType.SELECT_ONE,
+	},
+	{
+		label: 'transaction date',
+		type: FilterType.DATE,
+	},
+]
+
+export const initialContext: { cards: Card[], transactions: TransactionFullInfo[], filters: Filter[] } = {
+	cards,
+	transactions: cards.reduce((acc, card) => [
+		...acc,
+		...card.transactions.map((transactions) => ({
+			...transactions,
+			cardAccount: card.cardAccount,
+			cardID: card.cardID
+		})),
+	], []).flat(),
+	filters,
 };
 
 const DataContext = React.createContext(initialContext);
