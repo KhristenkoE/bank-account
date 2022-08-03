@@ -5,16 +5,17 @@
 - [x] Think of an architecture and code structure
 
 - [x] Make transaction list page
-- [ ] Make transaction details page
-- [ ] Make card list page
-- [ ] Make card details page
+- [x] Make transaction details page
+- [x] Make card list page
+- [x] Make card details page
 - [ ] Make breadcrums
 
 Add filters by
+- [x] transactionID
 - [ ] cardID
-- [ ] cardAccount
-- [ ] amount
-- [ ] currency
-- [ ] date
+- [x] cardAccount
+- [x] amount
+- [x] currency
+- [x] date
 
 - [ ] Make pagination
