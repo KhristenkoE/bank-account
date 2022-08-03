@@ -36,13 +36,18 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './build'),
     filename: 'bundle.[contenthash].js',
+		publicPath: '/',
   },
   
   plugins: [
     new HTMLWebpackPlugin({
-      template: './template/index.html',
+      template: path.resolve(__dirname, './template/index.html'),
     }),
   ],
+
+	devServer: {
+		historyApiFallback: true,
+	},
 
   mode,
 };
