@@ -4,20 +4,27 @@ export enum FilterType {
 	DATE = 'date',
 }
 
+export enum FilterName {
+	CARD_ID = 'cardID',
+	DATE = 'transactionDate',
+	CARD_ACCOUNT = 'cardAccount',
+	AMOUNT = 'amount',
+	CURRENCY = 'currency',
+	STATUS = 'status',
+}
+
 export interface FilterOption {
 	value: string | null;
 	label: string;
 }
 
-
 export interface Filter {
 	type: FilterType;
-	label: string;
+	label: FilterName
+	name: string;
 	options?: FilterOption[];
 	from?: number;
 	to?: number;
 }
 
-export interface AppliedFilter {
-	[name: string]: string | null | number | Date | { min: number; max: number };
-}
+export type AppliedFilter = Partial<Record<FilterName, string | number | { min: number; max: number; }>>;
