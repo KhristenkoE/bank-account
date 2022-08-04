@@ -8,14 +8,14 @@
 - [x] Make transaction details page
 - [x] Make card list page
 - [x] Make card details page
-- [ ] Make breadcrums
+- [x] Make breadcrums
 
 Add filters by
 - [x] transactionID
-- [ ] cardID
+- [x] cardID
 - [x] cardAccount
 - [x] amount
 - [x] currency
 - [x] date
 
-- [ ] Make pagination
+- [x] Make pagination
