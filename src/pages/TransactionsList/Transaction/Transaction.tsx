@@ -13,7 +13,7 @@ const Transaction = ({
 
 	return (
 		<article className={styles.transaction} key={transactionID}>
-			<h3>ID: {transactionID}</h3>
+			<h3 className={styles.title}>ID: {transactionID}</h3>
 			<ul className={styles.transactionInfoList}>
 				<li>Date: <strong>{transactionDate}</strong></li>
 				<li>Amount: <strong>{amount}</strong></li>
