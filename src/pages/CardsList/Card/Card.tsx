@@ -12,9 +12,9 @@ const Card = ({
 	const { balance, status, currency, cardAccount, cardID } = card;
 
 	return (
-		<article className={styles.transaction}>
-			<h3>ID: {cardID}</h3>
-			<ul className={styles.transactionInfoList}>
+		<article className={styles.card}>
+			<h3 className={styles.title}>ID: {cardID}</h3>
+			<ul className={styles.cardInfoList}>
 				<li>Balance: <strong>{balance}</strong></li>
 				<li>Status: <strong>{status}</strong></li>
 				<li>Currency: <strong>{currency}</strong></li>

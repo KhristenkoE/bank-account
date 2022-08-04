@@ -1,0 +1,41 @@
+.section {
+	padding: 20px 20px;
+}
+
+.propsList {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	justify-content: flex-start;
+	column-gap: 70px;
+	row-gap: 10px;
+	margin-bottom: 20px;
+}
+
+.propsList li {
+	display: grid;
+	grid-auto-flow: column;
+	column-gap: 10px;
+	justify-content: flex-start;
+}
+
+.seeTransactionsButton {
+	padding: 10px 22px;
+	background-color: #141921;
+	border-radius: 5px;
+	text-decoration: none;
+	color: inherit;
+	border: none;
+	font-size: 17px;
+}
+
+.seeTransactionsButton:hover {
+	cursor: pointer;
+	background-color: #1d232e;
+}
+
+.title {
+	margin-bottom: 20px;
+}
