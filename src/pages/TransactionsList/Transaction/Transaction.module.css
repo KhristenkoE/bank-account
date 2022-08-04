@@ -1,5 +1,5 @@
 .transaction {
-	padding: 10px 30px;
+	padding: 30px 30px;
 	background-color: #141921;
 	border-radius: 5px;
 	transition: all 0.2s ease-in-out;
@@ -20,5 +20,9 @@
 	justify-content: flex-start;
 	overflow-x: auto;
 	color: #666f7d;
+	margin: 0;
 }
 
+.title {
+	margin-bottom: 10px;
+}

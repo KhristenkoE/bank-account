@@ -1,0 +1,30 @@
+.section {
+	padding: 20px 20px;
+}
+
+.propsList {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	justify-content: flex-start;
+	column-gap: 70px;
+	row-gap: 10px;
+	margin-bottom: 20px;
+}
+
+.propsList li {
+	display: grid;
+	grid-auto-flow: column;
+	column-gap: 10px;
+	justify-content: flex-start;
+}
+
+.cardLink, .cardLink:visited {
+	color: #4d81db;
+}
+
+.title {
+	margin-bottom: 20px;
+}
