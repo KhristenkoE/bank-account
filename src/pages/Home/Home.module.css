@@ -1,5 +1,5 @@
 .nav {
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,6 +9,8 @@
 	display: grid;
 	grid-auto-flow: column;
 	column-gap: 40px;
+	position: absolute;
+	top: 50%;
 }
 
 .navButton {
