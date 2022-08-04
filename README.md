@@ -9,7 +9,7 @@ A showcase project of how Eugene Khristenko does his job.
 
 ### Getting started
 To start the project localy you need to:
-```
+
 - `git clone git@github.com:KhristenkoE/bank-account.git`
 - `cd bank-account`
 - `yarn install` or `npm install`
