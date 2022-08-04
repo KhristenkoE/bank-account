@@ -5,12 +5,24 @@
 	text-decoration: none;
 	color: inherit;
 	border: none;
+	position: relative;
 }
 
 .filterButton:hover {
 	cursor: pointer;
 	transform: scale(1.01);
 	background-color: #1d232e;
+}
+
+.filterButtonIndicate::before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	right: 7px;
+	width: 5px;
+	height: 5px;
+	background-color: #b0104b;
+	border-radius: 100%;
 }
 
 .filtersBlock {
@@ -64,3 +76,35 @@
 	}
 } */
 
+
+.title {
+	margin: 0 0 20px 0;
+}
+
+.list {
+	margin: 0 0 20px 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	column-gap: 40px;
+	row-gap: 10px;
+}
+
+.filter {
+	display: grid;
+	grid-auto-flow: column;
+	column-gap: 10px;
+	justify-content: flex-start;
+}
+
+.clearFilters {
+	border: none;
+	border-radius: 5px;
+	padding: 5px 12px;
+	background-color: #c6cfde;
+	cursor: pointer;
+}
+
+.clearFilters:hover {
+	background-color: #e6eaf1;
+}
