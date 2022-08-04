@@ -7,6 +7,7 @@
 
 .list li {
 	margin-right: 10px;
+	position: relative;
 }
 
 .list li button {
@@ -19,4 +20,16 @@
 .list li button.breadcrumbActive {
 	color: white;
 	cursor: default;
+}
+
+.list li:not(:last-child):before {
+	content: '';
+	position: absolute;
+	height: 5px;
+	width: 5px;
+	background: #27303c;
+	border-radius: 100%;
+	top: 50%;
+	transform: translateY(-1px);
+	right: -7px;
 }

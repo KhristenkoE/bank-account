@@ -4,7 +4,7 @@ import { BreadcrumbsContext } from '../../contexts/BreadcrumbsContext';
 import styles from './Breadcrumbs.module.css';
 
 const Breadcrumbs = () => {
-	const { breadcrumbs, setBreadcrumbs } = useContext(BreadcrumbsContext);
+	const { breadcrumbs } = useContext(BreadcrumbsContext);
 	const navigate = useNavigate();
 
 	const onBreadcrumbClick = (url: string, index: number) => {

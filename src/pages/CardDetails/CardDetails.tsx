@@ -17,7 +17,7 @@ const CardDetails = () => {
 		setAppliedTransactionFilters({
 			[FilterName.CARD_ID]: card.cardID,
 		});
-		navigate('/transactions');
+		navigate(`/cards/${card.cardID}/transactions`);
 	};
 	
 	if (card === undefined) {

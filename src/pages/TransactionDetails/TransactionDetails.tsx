@@ -24,7 +24,7 @@ const TransactionDetails = () => {
 					<li>Amount: <strong>{transaction.amount}</strong></li>
 					<li>Currency: <strong>{transaction.currency}</strong></li>
 					<li>Date: <strong>{transaction.transactionDate}</strong></li>
-					<li>Card ID: <Link className={styles.cardLink} to={`/cards/${transaction.cardID}`}><strong>{transaction.cardID}</strong></Link></li>
+					<li>Card ID: <Link className={styles.cardLink} to={`/transactions/${transaction.transactionID}/${transaction.cardID}`}><strong>{transaction.cardID}</strong></Link></li>
 				</ul>
 			</article>
 		</section>

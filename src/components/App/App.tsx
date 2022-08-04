@@ -20,8 +20,11 @@ const App = () => {
 					<Routes>
 						<Route path="transactions" element={<TransactionsList />} />
 						<Route path="transactions/:transactionID" element={<TransactionDetails />} />
+						<Route path="transactions/:transactionID/:cardID" element={<CardDetails />} />
 						<Route path="cards" element={<CardsList />} />
 						<Route path="cards/:cardID" element={<CardDetails />} />
+						<Route path="cards/:cardID/transactions" element={<TransactionsList />} />
+						<Route path="cards/:cardID/transactions/:transactionID" element={<TransactionDetails />} />
 						<Route path="/" element={<Home />} />
 						<Route path="*" element={<_404 />} />
 					</Routes>
