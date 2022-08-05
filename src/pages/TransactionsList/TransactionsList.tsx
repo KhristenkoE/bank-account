@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useContext, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Filter from '../../components/Filter/Filter';
 import ItemsList from '../../components/ItemsList/ItemsList';
