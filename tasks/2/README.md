@@ -12,3 +12,6 @@ But here are the main ones, all of them have their pros and cons but
 2. Go into details of every element and make buttons perfeclty UXy first, then forms, then something else
 3. Go by screens. Take screen with pizzas, markup it, do logic for it, move forward.
 4. Use user stories. John wants to it pizza, he goes to pizzas list, checks it’s ingredients, adds to the card, orders. That’s how this approach works. You make only those screens that are most required. And then if you have time - do others
+
+### How I did it
+Basically i chose the 3rd option. Since I needed the whole project finished ASAP, there's no use for user stories. So I started off with the first screen in the design. But one important thing I do is if I meet a repetead element - I get it out of the component and put into a separate one to reuse it further and not create duplicates (DRY)
