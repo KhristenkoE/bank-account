@@ -6,6 +6,7 @@ A showcase project of how Eugene Khristenko does his job.
 1. Look at tasks
 2. Look at commits
 3. See how I implemented the project
+4. Look at the pull request and see code review that I did for my self, as I would for someone else
 
 ### Getting started
 To start the project localy you need to:
