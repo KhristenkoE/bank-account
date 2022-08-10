@@ -24,24 +24,27 @@ const getRandomFormatedDate = (from: { year: number; month: number; day: number 
 	return `${randomDate.getDate()}/${randomDate.getMonth() + 1}/${randomDate.getFullYear()}`;
 };
 
-const getMockTransactionsData = () => ({
+const getMockTransactionsData = (currency: Currency) => ({
 	transactionID: uuidv4(),
 	amount: getRandomIntInRange(MIN_TRANSFER_AMOUNT, MAX_CARD_BALANCE),
-	currency: getRandomItemIn(Object.values(Currency)),
+	currency,
 	transactionDate: getRandomFormatedDate({ year: 2015, month: 1, day: 1 }),
 	merchantInfo: 'Cloudflare.Inc',
 });
 
-const getMockCardsData = () => Array.from({ length: 20 }, () => ({
-	cardID: uuidv4(),
-	cardAccount: getRandomItemIn(accounts),
-	maskedCardNumber: '1234 5678 9012 3456',
-	expireDate: '11/08/26',
-	currency: getRandomItemIn(Object.values(Currency)),
-	status: getRandomItemIn(Object.values(Status)),
-	balance: getRandomIntInRange(0, MAX_CARD_BALANCE),
-	transactions: Array.from({ length: getRandomIntInRange(10, 30) }, () => getMockTransactionsData()),
-}));
+const getMockCardsData = () => Array.from({ length: 20 }, () => {
+	const supportedCurrency = getRandomItemIn(Object.values(Currency));
+	return {
+		cardID: uuidv4(),
+		cardAccount: getRandomItemIn(accounts),
+		maskedCardNumber: '1234 5678 9012 3456',
+		expireDate: '11/08/26',
+		currency: supportedCurrency,
+		status: getRandomItemIn(Object.values(Status)),
+		balance: getRandomIntInRange(0, MAX_CARD_BALANCE),
+		transactions: Array.from({ length: getRandomIntInRange(10, 30) }, () => getMockTransactionsData(supportedCurrency)),
+	};
+});
 
 const cards = getMockCardsData();
 
@@ -149,7 +152,7 @@ const transactionFilters: Filter[] = [
 
 interface InitialContext {
 	cards: Card[],
-	transactions: TransactionFullInfo[], 
+	transactions: TransactionFullInfo[],
 	transactionFilters: Filter[],
 	cardsFilters: Filter[],
 }

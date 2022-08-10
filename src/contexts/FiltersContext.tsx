@@ -19,7 +19,6 @@ export const initialContext: FiltersContext = {
 	setTransactionFilters: () => {},
 	setAppliedTransactionFilters: () => {},
 
-
 	cardFilters: [],
 	appliedCardFilters: {},
 	setCardFilters: () => {},
