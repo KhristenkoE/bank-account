@@ -1,0 +1,28 @@
+.nav {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navButtons {
+	display: grid;
+	grid-auto-flow: column;
+	column-gap: 40px;
+	position: absolute;
+	top: 50%;
+}
+
+.navButton {
+	padding: 10px 20px;
+	background-color: #141921;
+	border-radius: 5px;
+	text-decoration: none;
+	color: inherit;
+}
+
+.navButton:hover {
+	cursor: pointer;
+	transform: scale(1.01);
+	background-color: #1d232e;
+}
