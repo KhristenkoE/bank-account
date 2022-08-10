@@ -1,10 +1,17 @@
 # Third, Estimate
 
-### How I estimate tasks?
-I take a single task, then in my head imaging approximate flow of how I will do it, for example task "Make transaction list page"
-- Create a component
-- Add a list of divs, mapping over mock data
-- When I click on a div, I want to open a modal with details of the transaction
-...etc
+## How Do I estimate tasks?
+1. I take one task, and try to imaging the approximate flow of how I will do it, or use figjam to help me with visualisation.
+2. Estimate every step in the task
+3. Combine times, and get the time for one task
+
+### Example
+Task: "TransactionsList component"
+
+*In my head:*
+- Create a component - 10mins
+- Add a list of divs, mapping over some mock data - 10mins
+- Get data with hooks, probably - 20mins
+- ...etc
 
 I estimated all of the tasks that are at the time of this commit at ~10-12 hours of work

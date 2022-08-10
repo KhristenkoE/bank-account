@@ -5,7 +5,7 @@ A showcase project of how Eugene Khristenko does his job.
 ### Stages
 1. Look at tasks
 2. Look at commits
-3. See how the flow went
+3. See how I implemented the project
 
 ### Getting started
 To start the project localy you need to:
